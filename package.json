@@ -9,6 +9,13 @@
     "test": "ng test",
     "serve:ssr:climate-change": "node dist/climate-change/server/server.mjs"
   },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true,
+    "bracketSameLine": true
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "^17.3.0",
