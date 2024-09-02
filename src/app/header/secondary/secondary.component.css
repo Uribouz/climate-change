@@ -1,559 +1,63 @@
-@font-face {
-  font-family: ipccserif;
-  src: url(https://www.ipcc.ch/site/assets/themes/ipcc-report/resources/fonts/ipccserif-regular-webfont.woff2)
-      format('woff2'),
-    url(https://www.ipcc.ch/site/assets/themes/ipcc-report/resources/fonts/ipccserif-regular-webfont.woff)
-      format('woff');
-  font-weight: 400;
-  font-style: normal;
+#header-secondary {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: center;
+  padding: 10px 0;
+  color: #fff;
+  font-family: roboto condensed, -apple-system, BlinkMacSystemFont, avenir next,
+    avenir, segoe ui, lucida grande, helvetica neue, helvetica, fira sans,
+    roboto, noto, droid sans, cantarell, oxygen, ubuntu, franklin gothic medium,
+    century gothic, liberation sans, sans-serif;
+  font-size: 1.2em;
+  z-index: 2;
+  box-shadow: 0 10px 30px rgba(37, 47, 82, 0.2);
+  background-color: #5492cd;
 }
-@font-face {
-  font-family: ipccserif;
-  src: url(https://www.ipcc.ch/site/assets/themes/ipcc-report/resources/fonts/ipccserif-bold-webfont.woff2)
-      format('woff2'),
-    url(https://www.ipcc.ch/site/assets/themes/ipcc-report/resources/fonts/ipccserif-bold-webfont.woff)
-      format('woff');
-  font-weight: 700;
-  font-style: normal;
+
+.home-link {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  max-width: 9999px;
+  max-height: 50px;
+  box-sizing: border-box;
 }
-@font-face {
-  font-family: ipccserif;
-  src: url(https://www.ipcc.ch/site/assets/themes/ipcc-report/resources/fonts/ipccserif-italic-webfont.woff2)
-      format('woff2'),
-    url(https://www.ipcc.ch/site/assets/themes/ipcc-report/resources/fonts/ipccserif-italic-webfont.woff)
-      format('woff');
-  font-weight: 400;
-  font-style: italic;
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  box-sizing: border-box;
+  max-width: 9999px;
+  max-height: 50px;
 }
-@font-face {
-  font-family: ipccicons;
-  src: url(https://www.ipcc.ch/site/assets/themes/ipcc-report/resources/fonts/IPCCIcons.eot?gxqzaz);
-  src: url(https://www.ipcc.ch/site/assets/themes/ipcc-report/resources/fonts/IPCCIcons.eot?gxqzaz#iefix)
-      format('embedded-opentype'),
-    url(https://www.ipcc.ch/site/assets/themes/ipcc-report/resources/fonts/IPCCIcons.ttf?gxqzaz)
-      format('truetype'),
-    url(https://www.ipcc.ch/site/assets/themes/ipcc-report/resources/fonts/IPCCIcons.woff?gxqzaz)
-      format('woff'),
-    url(https://www.ipcc.ch/site/assets/themes/ipcc-report/resources/fonts/IPCCIcons.svg?gxqzaz#IPCCIcons)
-      format('svg');
-  font-weight: 400;
-  font-style: normal;
+
+.menu-item-has-children:hover {
+  background-color: #fff;
+  color: #5492cd;
+  opacity: 0.9;
 }
-@media all {
-  body {
-    color: #252f52;
-    font-family: ipccserif, -apple-system, BlinkMacSystemFont, avenir next,
-      avenir, segoe ui, lucida grande, helvetica neue, helvetica, fira sans,
-      roboto, noto, droid sans, cantarell, oxygen, ubuntu,
-      franklin gothic medium, century gothic, liberation sans, sans-serif;
-    font-size: 10px;
-    line-height: 1.15;
-  }
+
+.menu-item-has-children:hover > ul.sub-menu {
+  display: block;
+  background-color: #fff;
+  color: #5492cd;
+  opacity: 0.9;
 }
-@media all {
-  * {
-    box-sizing: inherit;
-  }
 
-  * {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-
-  body {
-    margin: 0;
-  }
-
-  body {
-    height: 100%;
-  }
-
-  body {
-    color: #252f52;
-    font-family: ipccserif, -apple-system, BlinkMacSystemFont, avenir next,
-      avenir, segoe ui, lucida grande, helvetica neue, helvetica, fira sans,
-      roboto, noto, droid sans, cantarell, oxygen, ubuntu,
-      franklin gothic medium, century gothic, liberation sans, sans-serif;
-    font-size: 10px;
-    line-height: 2;
-  }
-
-  body {
-    height: auto;
-    font-size: 10px;
-    line-height: 2;
-    background-color: #fff;
-  }
-
-  html {
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-  }
-
-  html {
-    box-sizing: border-box;
-  }
-
-  html {
-    height: 100%;
-  }
-
-  html {
-    height: auto;
-    font-size: 10px;
-    line-height: 2;
-    background-color: #fff;
-  }
-
-  .header-nav.secondary {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    align-items: center;
-    padding: 10px 0;
-    color: #fff;
-    font-family: roboto condensed, -apple-system, BlinkMacSystemFont,
-      avenir next, avenir, segoe ui, lucida grande, helvetica neue, helvetica,
-      fira sans, roboto, noto, droid sans, cantarell, oxygen, ubuntu,
-      franklin gothic medium, century gothic, liberation sans, sans-serif;
-    font-size: 1.2em;
-    z-index: 2;
-  }
-
-  #header-secondary {
-    box-shadow: 0 10px 30px rgba(37, 47, 82, 0.2);
-  }
-
-  #header-secondary {
-    background-color: #5492cd;
-  }
-
-  *,
-  :before,
-  :after {
-    box-sizing: inherit;
-  }
-
-  :before,
-  :after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-
-  .header-nav:after {
-    clear: both;
-    content: '';
-    display: block;
-  }
-
-  .menu-icon {
-    width: calc(8.3333333333%);
-    float: left;
-    margin-left: 0;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: center;
-    font-size: 1.2rem;
-  }
-
-  .menu-icon {
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 0.25rem;
-  }
-
-  .home-link {
-    width: calc(16.6666666667%);
-    float: left;
-    margin-left: 0;
-  }
-
-  .menu-container {
-    font-family: roboto condensed, -apple-system, BlinkMacSystemFont,
-      avenir next, avenir, segoe ui, lucida grande, helvetica neue, helvetica,
-      fira sans, roboto, noto, droid sans, cantarell, oxygen, ubuntu,
-      franklin gothic medium, century gothic, liberation sans, sans-serif;
-  }
-
-  .menu-container {
-    width: calc(50%);
-    float: left;
-    margin-left: 0;
-  }
-
-  .header-search {
-    width: calc(16.6666666667%);
-    float: left;
-    margin-left: calc(8.3333333333% + 0px);
-  }
-
-  a {
-    background-color: transparent;
-  }
-
-  a {
-    color: #5492cd;
-    text-decoration: none;
-    transition: color 150ms ease;
-  }
-
-  .menu-icon a {
-    display: block;
-  }
-
-  .header-nav.secondary a {
-    color: #fff;
-  }
-
-  a:active,
-  a:hover {
-    color: #3f6e9a;
-  }
-
-  .home-link a {
-    display: inline-block;
-  }
-
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  ul {
-    font-size: 1.6em;
-    padding-left: 40px;
-  }
-
-  ul {
-    list-style: square;
-  }
-
-  .menu-container ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-    font-size: 1em;
-  }
-
-  .header-nav.secondary .menu-container > ul {
-    text-align: right;
-  }
-
-  .header-search form::after {
-    clear: both;
-    content: '';
-    display: block;
-  }
-
-  i {
-    font-family: ipccicons !important;
-    speak: none;
-    font-style: normal;
-    font-weight: 400;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  i {
-    display: inline-block;
-    margin: 0 15px 0 0;
-    vertical-align: middle;
-  }
-
-  .menu-icon i {
-    display: block;
-    margin: 0;
-    font-size: 2em;
-  }
-
-  i {
-    margin: 0;
-  }
-
-  .icon-menu:before {
-    content: '';
-  }
-
-  .menu-icon span {
-    display: block;
-  }
-
-  img {
-    border-style: none;
-  }
-
-  img {
-    margin: 0;
-    max-width: 100%;
-  }
-
-  img {
-    display: block;
-  }
-
-  .home-link img {
-    display: inline-block;
-    width: auto;
-    height: auto;
-    max-width: 9999px;
-    max-height: 50px;
-  }
-
-  .home-link i {
-    margin: 0;
-    vertical-align: top;
-  }
-
-  .home-link i {
-    background-color: rgba(0, 0, 0, 0.1);
-    padding: 4px;
-    border-radius: 50%;
-  }
-
-  .icon-return:before {
-    content: '';
-  }
-
-  .menu-container ul li {
-    display: inline-block;
-    position: relative;
-    vertical-align: top;
-  }
-
-  .menu-item-has-children {
-    transition: 0.25s;
-  }
-
-  .header-nav .menu-item-has-children::before {
-    content: '';
-    display: inline-block;
-    font-family: ipccicons !important;
-    speak: none;
-    font-style: normal;
-    font-weight: 400;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  .header-nav .menu-item-has-children::before {
-    float: right;
-    margin: 6px;
-    font-size: 0.8em;
-    line-height: inherit;
-  }
-
-  .header-nav .menu-item-has-children:hover {
-    background-color: #eef4fa;
-  }
-
-  .header-nav .menu-item-has-children:hover::before,
-  .header-nav .menu-item-has-children:hover > a {
-    color: #5492cd;
-  }
-
-  label {
-    display: block;
-    font-weight: 600;
-    margin-bottom: 0.5em;
-  }
-
-  .screen-reader-text {
-    display: none;
-  }
-
-  input {
-    font-family: inherit;
-    font-size: 100%;
-    line-height: 1.15;
-    margin: 0;
-  }
-
-  input {
-    overflow: visible;
-  }
-
-  input {
-    display: block;
-    font-family: ipccserif, -apple-system, BlinkMacSystemFont, avenir next,
-      avenir, segoe ui, lucida grande, helvetica neue, helvetica, fira sans,
-      roboto, noto, droid sans, cantarell, oxygen, ubuntu,
-      franklin gothic medium, century gothic, liberation sans, sans-serif;
-    font-size: 10px;
-  }
-
-  [type='text'] {
-    appearance: none;
-    background-color: #fff;
-    border: 1px solid #b2bbc2;
-    border-radius: 0;
-    box-shadow: none;
-    box-sizing: border-box;
-    margin-bottom: 1em;
-    padding: 0.6666666667em;
-    transition: border-color 150ms ease;
-    width: 100%;
-  }
-
-  .header-search input {
-    float: right;
-    font-size: inherit;
-  }
-
-  .header-search input[type='text'] {
-    width: calc(100% - 32px - 10px);
-    height: 32px;
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-    border: none;
-    font-family: roboto condensed, -apple-system, BlinkMacSystemFont,
-      avenir next, avenir, segoe ui, lucida grande, helvetica neue, helvetica,
-      fira sans, roboto, noto, droid sans, cantarell, oxygen, ubuntu,
-      franklin gothic medium, century gothic, liberation sans, sans-serif;
-    line-height: 32px;
-    color: #fff;
-  }
-
-  .header-search input[type='text'] {
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 0.25rem;
-  }
-
-  button {
-    font-family: inherit;
-    font-size: 100%;
-    line-height: 1.15;
-    margin: 0;
-  }
-
-  button {
-    overflow: visible;
-  }
-
-  button {
-    text-transform: none;
-  }
-
-  button,
-  [type='submit'] {
-    -webkit-appearance: button;
-  }
-
-  button,
-  [type='submit'] {
-    appearance: none;
-    background-color: #5492cd;
-    border: 0;
-    border-radius: 0;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-family: ipccserif, -apple-system, BlinkMacSystemFont, avenir next,
-      avenir, segoe ui, lucida grande, helvetica neue, helvetica, fira sans,
-      roboto, noto, droid sans, cantarell, oxygen, ubuntu,
-      franklin gothic medium, century gothic, liberation sans, sans-serif;
-    font-size: 10px;
-    -webkit-font-smoothing: antialiased;
-    font-weight: 600;
-    line-height: 1;
-    padding: 1em 2em;
-    text-align: center;
-    text-decoration: none;
-    transition: background-color 150ms ease;
-    user-select: none;
-    vertical-align: middle;
-    white-space: nowrap;
-  }
-
-  .header-search #searchsubmit {
-    width: 32px;
-    height: 32px;
-    margin: 0 10px 0 0;
-    padding: 0;
-    font-size: 1.6em;
-    line-height: 24px;
-  }
-
-  button:hover,
-  [type='submit']:hover {
-    background-color: #4375a4;
-    color: #fff;
-  }
-
-  .menu-container ul li a {
-    display: block;
-    padding: 10px;
-    transition: 0.25s;
-  }
-
-  .header-nav .menu-item-has-children > a {
-    float: left;
-  }
-
-  .menu-container a {
-    padding: 10px;
-  }
-
-  .header-nav.secondary .menu-container > ul > li > a {
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 0.25rem;
-  }
-
-  ul ul {
-    font-size: inherit;
-  }
-
-  .menu-container ul li ul {
-    position: absolute;
-    top: 100%;
-    left: -9999px;
-    min-width: 200px;
-    background-color: rgba(255, 255, 255, 0.92);
-    padding: 0;
-    opacity: 0;
-    transition: left 0s ease 0.25s, opacity 0.25s ease 0s;
-    font-family: ipccserif, -apple-system, BlinkMacSystemFont, avenir next,
-      avenir, segoe ui, lucida grande, helvetica neue, helvetica, fira sans,
-      roboto, noto, droid sans, cantarell, oxygen, ubuntu,
-      franklin gothic medium, century gothic, liberation sans, sans-serif;
-    font-size: 1em;
-    text-align: left;
-  }
-
-  .menu-container .sub-menu {
-    background-color: rgba(255, 255, 255, 0.9);
-  }
-
-  #secondary-menu .sub-menu {
-    z-index: 10;
-  }
-
-  .icon-search:before {
-    content: '';
-  }
-
-  .menu-container ul li ul li {
-    display: block;
-  }
-
-  .menu-container ul li:hover > ul {
-    left: 0;
-    opacity: 1;
-    transition: left 0s ease 0s, opacity 0.25s ease 0s;
-  }
-
-  .menu-container .sub-menu a {
-    color: #5492cd;
-  }
+ul.sub-menu {
+  display: none;
+  position: absolute;
+}
+
+li.menu-item {
+  position: relative;
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }

@@ -1,0 +1,48 @@
+.header-container {
+  position: relative;
+}
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+user agent stylesheet div {
+  display: block;
+  unicode-bidi: isolate;
+}
+html,
+body {
+  height: auto;
+  font-size: 10px;
+  line-height: 2;
+  background-color: #fff;
+}
+body {
+  color: #252f52;
+  font-family: ipccserif, -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    segoe ui, lucida grande, helvetica neue, helvetica, fira sans, roboto, noto,
+    droid sans, cantarell, oxygen, ubuntu, franklin gothic medium,
+    century gothic, liberation sans, sans-serif;
+  font-size: 10px;
+  line-height: 2;
+}
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
